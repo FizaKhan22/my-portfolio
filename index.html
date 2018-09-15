@@ -12,6 +12,15 @@
     <link href="css/aos.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="styles/main.css" rel="stylesheet">
+    <script >
+    function submitForm () {
+
+document.getElementById("contactform").addEventListener("submit", function(event){
+    event.preventDefault()
+    console.log(event.target.message)
+});
+    }    
+    </script>
   </head>
   <body id="top">
     <header>
@@ -190,35 +199,30 @@
           <div class="row">
             <div class="col-md-6">
               <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#web-development">
-                  <figure class="cc-effect"><img src="images/vi-ss.png" alt="Image"/>
+                  <figure class="cc-effect"><img src="images/vi-ss.png"  alt="Image"/>
                     <figcaption>
                       <div class="h4">VPN Insights</div>
                       <p>Web Development</p>
                     </figcaption>
                   </figure></a></div>
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#web-development">
-                  <figure class="cc-effect"><img src="images/project-2.jpg" alt="Image"/>
-                    <figcaption>
-                      <div class="h4">Startup Project</div>
-                      <p>Web Development</p>
-                    </figcaption>
-                  </figure></a></div>
+           
             </div>
             <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#web-development">
-                  <figure class="cc-effect"><img src="images/project-3.jpg" alt="Image"/>
-                    <figcaption>
-                      <div class="h4">Food Order Project</div>
-                      <p>Web Development</p>
-                    </figcaption>
-                  </figure></a></div>
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#web-development">
+                <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#web-development">
+                    <figure class="cc-effect"><img src="images/praips-ss.png"   alt="Image"/>
+                      <figcaption>
+                        <div class="h4">Praips FAQ System</div>
+                        <p>Web Development</p>
+                      </figcaption>
+                    </figure></a></div>
+           
+              <!-- <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#web-development">
                   <figure class="cc-effect"><img src="images/project-4.jpg" alt="Image"/>
                     <figcaption>
                       <div class="h4">Web Advertising Project</div>
                       <p>Web Development</p>
                     </figcaption>
-                  </figure></a></div>
+                  </figure></a></div> -->
             </div>
           </div>
         </div>
@@ -242,7 +246,11 @@
         <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body">
             <div class="h5">Web App Developer</div>
-            <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui.</p>
+            <!-- <p>Euismod massa scelerisque suspendisse 
+              fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc 
+              inceptos tellus, hendrerit vel eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam 
+              integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, 
+              eu etiam pretium molestie ultricies sollicitudin dui.</p> -->
           </div>
         </div>
       </div>
@@ -306,7 +314,9 @@
     </div>
   </div>
 </div>
-
+<!-- onforminput="submitForm(e)"
+onsubmit="submitForm()" -->
+<!-- action="https://formspree.io/ahsankhan1911@gmail.com"  -->
 <div class="section" id="contact">
   <div class="cc-contact-information" style="background-image: url('images/staticmap.png');">
     <div class="container">
@@ -318,7 +328,7 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="card-body">
-                    <form action="https://formspree.io/ahsankhan1911@gmail.com" method="POST">
+                    <form  id="contactform">
                       <div class="p pb-3"><strong>Feel free to contact me </strong></div>
                       <div class="row mb-3">
                         <div class="col">
@@ -350,7 +360,9 @@
                       </div>
                       <div class="row">
                         <div class="col">
-                          <button class="btn btn-primary" type="submit">Send</button>
+                          <button class="btn btn-primary" onclick="submitForm(message.value)" 
+                  
+                          >Send</button>
                         </div>
                       </div>
                     </form>
