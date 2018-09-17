@@ -7231,6 +7231,7 @@ Created using IcoMoon - icomoon.io
   width: 100%;
   position: relative;
   overflow: hidden;
+  background-repeat: no-repeat;
 }
 
 .cc-contact-information .cc-contact {
@@ -7249,16 +7250,16 @@ Created using IcoMoon - icomoon.io
   color: #3b5998;
 }
 
-.cc-twitter:hover i {
-  color: #1da1f2;
+.cc-github:hover i {
+  color: black;
 }
 
-.cc-google-plus:hover i {
-  color: #dd4b39;
+.cc-linkedin:hover i {
+  color: #0073b1;
 }
 
-.cc-instagram:hover i {
-  color: #405de6;
+.cc-quora:hover i {
+  color: #b92b27;
 }
 
 /* Credit Style */

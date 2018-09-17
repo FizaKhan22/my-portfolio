@@ -13,14 +13,35 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="styles/main.css" rel="stylesheet">
     <script >
-    function submitForm () {
+        function btnClick(event){
+          event.preventDefault()
+        
+        
+         var form = document.getElementById('contactform') 
+        
+         var formdata = new FormData()
+         var i
+         for (i = 0; i < form.elements.length -1; i++ ) {
+          console.log( form.elements[i].value, i)
+               formdata.append(form.elements[i].name, form.elements[i].value )
 
-document.getElementById("contactform").addEventListener("submit", function(event){
-    event.preventDefault()
-    console.log(event.target.message)
-});
-    }    
-    </script>
+               
+         }
+
+     var request = new XMLHttpRequest();
+     request.open("POST", "https://formspree.io/ahsankhan1911@gmail.com");
+     request.setRequestHeader("Content-Type" , "multipart/form-data") 
+     request.setRequestHeader("Referer", "vpninsights.com")
+
+request.send(formdata);
+if(request.readyState === 4) {
+  console.log(request.response)
+}
+
+    
+     
+     }  
+         </script>
   </head>
   <body id="top">
     <header>
@@ -58,7 +79,12 @@ document.getElementById("contactform").addEventListener("submit", function(event
       </div>
       <div class="section">
         <div class="container">
-          <div class="button-container"><a class="btn btn-default btn-round btn-lg btn-icon" href="#" rel="tooltip" title="Follow me on Facebook"><i class="fa fa-facebook"></i></a><a class="btn btn-default btn-round btn-lg btn-icon" href="#" rel="tooltip" title="Follow me on Twitter"><i class="fa fa-twitter"></i></a><a class="btn btn-default btn-round btn-lg btn-icon" href="#" rel="tooltip" title="Follow me on Google+"><i class="fa fa-google-plus"></i></a><a class="btn btn-default btn-round btn-lg btn-icon" href="#" rel="tooltip" title="Follow me on Instagram"><i class="fa fa-instagram"></i></a></div>
+          <div class="button-container">
+            <a class="btn btn-default btn-round btn-lg btn-icon" target="_blank" href="https://www.fb.com/profile.php?id=1550840396" rel="tooltip" title="Follow me on Facebook"><i class="fa fa-facebook"></i></a>
+            <a class="btn btn-default btn-round btn-lg btn-icon" target="_blank" href="https://github.com/ahsankhan1911" rel="tooltip" title="Follow me on Github"><i class="fa fa-github"></i></a>
+            <a class="btn btn-default btn-round btn-lg btn-icon" target="_blank" href="https://www.linkedin.com/in/ahsan-khan-7ab4a6156/" rel="tooltip" title="Connect on Linkedin"><i class="fa fa-linkedin"></i></a>
+            <a class="btn btn-default btn-round btn-lg btn-icon" target="_blank" href="https://www.quora.com/profile/Ahsan-Khan-395" rel="tooltip" title="Follow me on Quora"><i class="fa fa-quora"></i></a>
+          </div>
         </div>
       </div>
     </div>
@@ -72,8 +98,10 @@ document.getElementById("contactform").addEventListener("submit", function(event
           <div class="card-body">
             <div class="h4 mt-0 title">About</div>
             <p>Hello! I am Ahsan Khan. Full Stack JS Developer.</p>
-            <p>I am experienced in web development for building web apps in ReactJs as a front end and Node/Express as a back end with MongoDB and Mongoose as its ODM for database. I have also designed and developed Content Management Systems, master pages, validation controls, CSS files using technologies like JavaScript, HTML, CSS and Bootstrap. 
-              <!-- <a href="https://templateflip.com/templates/creative-cv/" target="_blank">Learn More</a> -->
+            <p>I am experienced in web development for building web apps in ReactJs as a front end and Node/Express as a back end
+               with MongoDB and Mongoose as its ODM for database. I have also designed and developed Content Management Systems, 
+               master pages, validation controls, CSS files using technologies like JavaScript, HTML, CSS and Bootstrap. 
+              <a href="https://www.upwork.com/fl/ahsankhan274" target="_blank">Learn More</a>
             </p>
           </div>
         </div>
@@ -163,7 +191,11 @@ document.getElementById("contactform").addEventListener("submit", function(event
             <div class="col-md-6">
               <div class="progress-container progress-primary"><span class="progress-badge">MongoDB</span>
                 <div class="progress">
-                  <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div><span class="progress-value">70%</span>
+                  <div class="progress-bar progress-bar-primary" data-aos="progress-full" 
+                  data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" 
+                  aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                </div>
+                  <span class="progress-value">70%</span>
                 </div>
               </div>
             </div>
@@ -199,7 +231,7 @@ document.getElementById("contactform").addEventListener("submit", function(event
           <div class="row">
             <div class="col-md-6">
               <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#web-development">
-                  <figure class="cc-effect"><img src="images/vi-ss.PNG"  alt="Image"/>
+                  <figure class="cc-effect"><img src="images/vi-ss.png"  alt="Image"/>
                     <figcaption>
                       <div class="h4">VPN Insights</div>
                       <p>Web Development</p>
@@ -209,7 +241,7 @@ document.getElementById("contactform").addEventListener("submit", function(event
             </div>
             <div class="col-md-6">
                 <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#web-development">
-                    <figure class="cc-effect"><img src="images/praips-ss.PNG"   alt="Image"/>
+                    <figure class="cc-effect"><img src="images/praips-ss.png"   alt="Image"/>
                       <figcaption>
                         <div class="h4">Praips FAQ System</div>
                         <p>Web Development</p>
@@ -246,11 +278,15 @@ document.getElementById("contactform").addEventListener("submit", function(event
         <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body">
             <div class="h5">Web App Developer</div>
-            <!-- <p>Euismod massa scelerisque suspendisse 
-              fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc 
-              inceptos tellus, hendrerit vel eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam 
-              integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, 
-              eu etiam pretium molestie ultricies sollicitudin dui.</p> -->
+            <p>My responsibilities includes: 
+              <ul>
+                <li>Creating responsive and Mobile friendly Web Design.</li>
+                <li>Making front-end logics which should meet the requirements of the app.</li>
+                <li>Building a powerful backend of the app with RESTful APIs where all the data and business logics exists.</li>
+
+
+              </ul>
+            </p>
           </div>
         </div>
       </div>
@@ -265,15 +301,17 @@ document.getElementById("contactform").addEventListener("submit", function(event
       <div class="row">
         <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body cc-education-header">
-            <p>2013 - 2015</p>
-            <div class="h5">Master's Degree</div>
+            <p>2015 - present</p>
+            <div class="h5">Diploma</div>
           </div>
         </div>
         <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body">
-            <div class="h5">Master of Information Technology</div>
-            <p class="category">University of Computer Science</p>
-            <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui.</p>
+            <div class="h5">Software Engineering</div>
+            <p class="category">Aptech Computer Education</p>
+            <p>Aptech Limited is a global education and training company headquartered in Mumbai, India. In 2016,
+               Aptech was voted as India's Most Trusted Brand in training & education in the consumer survey conducted
+                by IBC Infomedia & Media Research Group.</p>
           </div>
         </div>
       </div>
@@ -282,15 +320,15 @@ document.getElementById("contactform").addEventListener("submit", function(event
       <div class="row">
         <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body cc-education-header">
-            <p>2009 - 2013</p>
-            <div class="h5">Bachelor's Degree</div>
+            <p>2012 - 2014</p>
+            <div class="h5">Intermediate</div>
           </div>
         </div>
         <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body">
-            <div class="h5">Bachelor of Computer Science</div>
-            <p class="category">University of Computer Science</p>
-            <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui.</p>
+            <div class="h5">Pre - Engineering</div>
+            <p class="category">Govt. Degree College For Boys Gulistan e Johar</p>
+            <p>The college is located at Main University Road, Karachi.</p>
           </div>
         </div>
       </div>
@@ -299,15 +337,17 @@ document.getElementById("contactform").addEventListener("submit", function(event
       <div class="row">
         <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body cc-education-header">
-            <p>2007 - 2009</p>
+            <p>2010 - 2012</p>
             <div class="h5">High School</div>
           </div>
         </div>
         <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body">
-            <div class="h5">Science and Mathematics</div>
-            <p class="category">School of Secondary board</p>
-            <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui.</p>
+            <div class="h5">General Science</div>
+            <p class="category">Orchard Grammar School</p>
+            <p>Orchard Grammar School was established in 1998 in the vicinity of Gulishtan-e-Jauhar. 
+              Today Orchard Grammar School is one of the most reputed Schools of Karachi offering both
+               matriculation and O Levels Studies with a dedicated Campus for O Levels.</p>
           </div>
         </div>
       </div>
@@ -328,7 +368,7 @@ onsubmit="submitForm()" -->
               <div class="row">
                 <div class="col-md-6">
                   <div class="card-body">
-                    <form  id="contactform">
+                    <form  id="contactform" action="return false" onsubmit="e.preventDefault()">
                       <div class="p pb-3"><strong>Feel free to contact me </strong></div>
                       <div class="row mb-3">
                         <div class="col">
@@ -360,7 +400,8 @@ onsubmit="submitForm()" -->
                       </div>
                       <div class="row">
                         <div class="col">
-                          <button class="btn btn-primary" onclick="submitForm(message.value)" 
+                          <button class="btn btn-primary" onclick="btnClick(event)"
+                        
                   
                           >Send</button>
                         </div>
@@ -388,10 +429,15 @@ onsubmit="submitForm()" -->
 </div></div>
     </div>
     <footer class="footer">
-      <div class="container text-center"><a class="cc-facebook btn btn-link" href="#"><i class="fa fa-facebook fa-2x " aria-hidden="true"></i></a><a class="cc-twitter btn btn-link " href="#"><i class="fa fa-twitter fa-2x " aria-hidden="true"></i></a><a class="cc-google-plus btn btn-link" href="#"><i class="fa fa-google-plus fa-2x" aria-hidden="true"></i></a><a class="cc-instagram btn btn-link" href="#"><i class="fa fa-instagram fa-2x " aria-hidden="true"></i></a></div>
+      <div class="container text-center">
+        <a class="cc-facebook btn btn-link" target="_blank" href="https://www.fb.com/profile.php?id=1550840396"><i class="fa fa-facebook fa-2x " aria-hidden="true"></i></a>
+        <a class="cc-github btn btn-link " target="_blank" href="https://github.com/ahsankhan1911"><i class="fa fa-github fa-2x " aria-hidden="true"></i></a>
+        <a class="cc-linkedin btn btn-link" target="_blank" href="https://www.linkedin.com/in/ahsan-khan-7ab4a6156/" ><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+        <a class="cc-quora btn btn-link"target="_blank" href="https://www.quora.com/profile/Ahsan-Khan-395"><i class="fa fa-quora fa-2x " aria-hidden="true"></i></a>
+      </div>
       <div class="h4 title text-center">Ahsan Khan</div>
       <div class="text-center text-muted">
-        <p>&copy; Creative CV. All rights reserved.<br>Design - <a class="credit" href="https://templateflip.com" target="_blank">TemplateFlip</a></p>
+        <p>&copy; Ahsan Khan's CV. All rights reserved 2018. </p>
       </div>
     </footer>
     <script src="js/core/jquery.3.2.1.min.js"></script>
@@ -400,5 +446,12 @@ onsubmit="submitForm()" -->
     <script src="js/now-ui-kit.js?v=1.1.0"></script>
     <script src="js/aos.js"></script>
     <script src="scripts/main.js"></script>
+    <script>
+    document.getElementById('contactform').addEventListener("submit", (event) => {
+
+      event.preventDefault()
+    })
+    </script>
   </body>
+ 
 </html>
