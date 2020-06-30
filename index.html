@@ -1,332 +1,515 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125945051-1"></script>
-<script>
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125945051-1"></script> -->
+  <!-- <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'UA-125945051-1');
-</script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="google-site-verification" content="MIjy0AlgSxdc8t0NjkzPY7MZUs84YFda-zfJOWjc7ms" />
-    <title>Ahsan Khan - Full Stack JavaScript Developer </title>
-    <meta name="description" content="Full Stack JavaScript Developer"/>
-    <link rel="icon" type="image/ico" href="images/js-icon.png" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/aos.css" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="styles/main.css" rel="stylesheet">
-    <script >
-        function btnClick(event){
-          event.preventDefault()
-        
-        
-         var form = document.getElementById('contactform') 
-        
-         var formdata = new FormData()
-         var i
-         for (i = 0; i < form.elements.length -1; i++ ) {
-          console.log( form.elements[i].value, i)
-               formdata.append(form.elements[i].name, form.elements[i].value )
+</script> -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <meta name="google-site-verification" content="MIjy0AlgSxdc8t0NjkzPY7MZUs84YFda-zfJOWjc7ms" /> -->
+  <title>Fiza Khan - Freelance Copy Writer </title>
+  <meta name="description"
+    content="I'm a freelance writer and an independent food blogger with years of experience in this domain. If you're looking for someone who can write a sell booster description, then you are without a doubt in the perfect place to achieve that. For absolutely any questions, I am here to help you and provide the best and professional supply. I will reply as soon as possible. This is the best investment you can make! Invest in your business with professionalism! Let's work together!" />
 
-               
-         }
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="portfolio">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Fiza Khan - Freelance Copy Writer">
+  <meta property="og:description"
+    content="I'm a freelance writer and an independent food blogger with years of experience in this domain. If you're looking for someone who can write a sell booster description, then you are without a doubt in the perfect place to achieve that. For absolutely any questions, I am here to help you and provide the best and professional supply. I will reply as soon as possible. This is the best investment you can make! Invest in your business with professionalism! Let's work together!">
+  <meta property="og:image" content="images/fizakhan.jpeg">
 
-     var request = new XMLHttpRequest();
-     request.open("POST", "https://formspree.io/ahsankhan1911@gmail.com");
-     request.setRequestHeader("Content-Type" , "multipart/form-data") 
-     request.setRequestHeader("Referer", "vpninsights.com")
+  <!-- Twitter -->
+  <meta property="twitter:card" content="images/fizakhan.jpeg">
+  <meta property="twitter:url" content="">
+  <meta property="twitter:title" content="Fiza Khan - Freelance Copy Writer">
+  <meta property="twitter:description"
+    content="I'm a freelance writer and an independent food blogger with years of experience in this domain. If you're looking for someone who can write a sell booster description, then you are without a doubt in the perfect place to achieve that. For absolutely any questions, I am here to help you and provide the best and professional supply. I will reply as soon as possible. This is the best investment you can make! Invest in your business with professionalism! Let's work together!">
+  <meta property="twitter:image" content="images/fizakhan.jpeg">
 
-request.send(formdata);
-if(request.readyState === 4) {
-  console.log(request.response)
-}
 
-    
-     
-     }  
-         </script>
-  </head>
-  <body id="top">
-    <header>
-      <div class="profile-page sidebar-collapse">
-        <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary" color-on-scroll="400">
-          <div class="container">
-            <div class="navbar-translate"><a class="navbar-brand" href="#" rel="tooltip">Curriculum Vitae</a>
-              <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-bar bar1"></span><span class="navbar-toggler-bar bar2"></span><span class="navbar-toggler-bar bar3"></span></button>
-            </div>
-            <div class="collapse navbar-collapse justify-content-end" id="navigation">
-              <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="#skill">Skills</a></li>
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="#portfolio">Portfolio</a></li>
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="#experience">Experience</a></li>
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <div class="page-content">
-      <div>
-<div class="profile-page">
-  <div class="wrapper">
-    <div class="page-header page-header-small" filter-color="green">
-      <div class="page-header-image" data-parallax="true" style="background-image: url('images/cc-bg-1.jpg');"></div>
-      <div class="container">
-        <div class="content-center">
-          <div class="cc-profile-image"><a href="#"><img src="images/ahsan.jpg" alt="Image"/></a></div>
-          <div class="h2 title">Ahsan Ali Khan</div>
-          <p class="category text-white">Full Stack <img class="jsIcon" src="images/js-icon.png" alt="Image"/> Developer</p><a class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Hire Me</a><a class="btn btn-primary" href="#" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Download CV</a>
-        </div>
-      </div>
-      <div class="section">
+  <link rel="icon" type="image/ico" href="images/favicon.png" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/aos.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="styles/main.css" rel="stylesheet">
+</head>
+
+<body id="top">
+  <header>
+    <div class="profile-page sidebar-collapse">
+      <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary" color-on-scroll="400">
         <div class="container">
-          <div class="button-container">
-            <a class="btn btn-default btn-round btn-lg btn-icon" target="_blank" href="https://www.fb.com/profile.php?id=1550840396" rel="tooltip" title="Follow me on Facebook"><i class="fa fa-facebook"></i></a>
-            <a class="btn btn-default btn-round btn-lg btn-icon" target="_blank" href="https://github.com/ahsankhan1911" rel="tooltip" title="Follow me on Github"><i class="fa fa-github"></i></a>
-            <a class="btn btn-default btn-round btn-lg btn-icon" target="_blank" href="https://www.linkedin.com/in/ahsan-khan-7ab4a6156/" rel="tooltip" title="Connect on Linkedin"><i class="fa fa-linkedin"></i></a>
-            <a class="btn btn-default btn-round btn-lg btn-icon" target="_blank" href="https://www.quora.com/profile/Ahsan-Khan-395" rel="tooltip" title="Follow me on Quora"><i class="fa fa-quora"></i></a>
+          <div class="navbar-translate"><a class="navbar-brand" href="#" rel="tooltip">Beyond The Hedge</a>
+            <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+              aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-bar bar1"></span><span class="navbar-toggler-bar bar2"></span><span
+                class="navbar-toggler-bar bar3"></span></button>
+          </div>
+          <div class="collapse navbar-collapse justify-content-end" id="navigation">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">About</a></li>
+              <li class="nav-item"><a class="nav-link smooth-scroll" href="#skill">Skills</a></li>
+              <li class="nav-item"><a class="nav-link smooth-scroll" href="#portfolio">Portfolio</a></li>
+              <li class="nav-item"><a class="nav-link smooth-scroll" href="#experience">Experience</a></li>
+              <!-- <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contact</a></li> -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <div class="page-content">
+    <div>
+      <div class="profile-page">
+        <div class="wrapper">
+          <div class="page-header page-header-small" filter-color="green">
+            <div class="page-header-image" data-parallax="true" style="background-image: url('images/cc-bg-2.jpeg');">
+            </div>
+            <div class="container">
+              <div class="content-center">
+                <div class="cc-profile-image"><a href="#"><img src="images/fizakhan.jpeg" alt="Image" /></a></div>
+                <div class="h2 title">Fiza Khan</div>
+                <p class="category text-white">Freelance Copywriter</p>
+                <a class="btn btn-primary smooth-scroll mr-2" href="https://www.messenger.com/t/fiza.khan16"
+                  target="_blank" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Hire Me</a>
+                <!-- <a class="btn btn-primary" href="#" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Download CV</a> -->
+              </div>
+            </div>
+            <div class="section">
+              <div class="container">
+                <div class="button-container">
+                  <a class="btn btn-default btn-round btn-lg btn-icon" target="_blank"
+                    href="https://www.facebook.com/fiza.khan16" rel="tooltip" title="Follow me on Facebook"><i
+                      class="fa fa-facebook"></i></a>
+                  <a class="btn btn-default btn-round btn-lg btn-icon" target="_blank"
+                    href="https://twitter.com/FizaKha70329488" rel="tooltip" title="Follow me on Twitter"><i
+                      class="fa fa-twitter"></i></a>
+                  <a class="btn btn-default btn-round btn-lg btn-icon" target="_blank"
+                    href="http://linkedin.com/in/fizakhan22" rel="tooltip" title="Connect on Linkedin"><i
+                      class="fa fa-linkedin"></i></a>
+                  <a class="btn btn-default btn-round btn-lg btn-icon" target="_blank"
+                    href="https://www.quora.com/profile/Fiza-Khan-756" rel="tooltip" title="Follow me on Quora"><i
+                      class="fa fa-quora"></i></a>
+                  <a class="btn btn-default btn-round btn-lg btn-icon" target="_blank"
+                    href="https://www.instagram.com/fizak749/" rel="tooltip" title="Follow me on Instagram"><i
+                      class="fa fa-instagram"></i></a>
+
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</div>
-<div class="section" id="about">
-  <div class="container">
-    <div class="card" data-aos="fade-up" data-aos-offset="10">
-      <div class="row">
-        <div class="col-lg-6 col-md-12">
-          <div class="card-body">
-            <div class="h4 mt-0 title">About</div>
-            <p>Hello! I am Ahsan Khan. Full Stack JS Developer.</p>
-            <p>I am experienced in web development for building web apps in ReactJs as a front end and Node/Express as a back end
-               with MongoDB and Mongoose as its ODM for database. I have also designed and developed Content Management Systems, 
-               master pages, validation controls, CSS files using technologies like JavaScript, HTML, CSS and Bootstrap. 
-              <a href="https://www.upwork.com/fl/ahsankhan274" target="_blank">Learn More</a>
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-12">
-          <div class="card-body">
-            <div class="h4 mt-0 title">Basic Information</div>
+      <div class="section" id="about">
+        <div class="container">
+          <div class="card" data-aos="fade-up" data-aos-offset="10">
             <div class="row">
-              <div class="col-sm-4"><strong class="text-uppercase">Age:</strong></div>
-              <div class="col-sm-8">22</div>
-            </div>
-            <div class="row mt-3">
-              <div class="col-sm-4"><strong class="text-uppercase">Email:</strong></div>
-              <div class="col-sm-8">ahsankhan1911@gmail.com</div>
-            </div>
-            <div class="row mt-3">
+              <div class="col-lg-6 col-md-12">
+                <div class="card-body">
+                  <div class="h4 mt-0 title">About</div>
+                  <p>Hello! I am Fiza Khan. Freelance Copy Writer.</p>
+                  <p>I'm a freelance writer and an independent food blogger with years of experience in this domain. If
+                    you're looking for someone who can write a sell booster description, then you are without a doubt in
+                    the perfect place to achieve that. For absolutely any questions, I am here to help you and provide
+                    the best and professional supply. I will reply as soon as possible. This is the best investment you
+                    can make! Invest in your business with professionalism! Let's work together!
+                    <!-- <a href="https://www.upwork.com/fl/ahsankhan274" target="_blank">Learn More</a> -->
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12">
+                <div class="card-body">
+                  <div class="h4 mt-0 title">Basic Information</div>
+                  <div class="row">
+                    <div class="col-sm-4"><strong class="text-uppercase">Age:</strong></div>
+                    <div class="col-sm-8">26</div>
+                  </div>
+                  <div class="row mt-3">
+                    <div class="col-sm-4"><strong class="text-uppercase">Email:</strong></div>
+                    <div class="col-sm-8">fizak749@gmail.com</div>
+                  </div>
+                  <!-- <div class="row mt-3">
               <div class="col-sm-4"><strong class="text-uppercase">Phone:</strong></div>
               <div class="col-sm-8">+92-336-3547693</div>
-            </div>
-            <div class="row mt-3">
+            </div> -->
+                  <!-- <div class="row mt-3">
               <div class="col-sm-4"><strong class="text-uppercase">Address:</strong></div>
               <div class="col-sm-8">A-62/5 blk#14 Gulistan e Johar, Khi</div>
-            </div>
-            <div class="row mt-3">
-              <div class="col-sm-4"><strong class="text-uppercase">Language:</strong></div>
-              <div class="col-sm-8">Urdu , English</div>
+            </div> -->
+                  <div class="row mt-3">
+                    <div class="col-sm-4"><strong class="text-uppercase">Language:</strong></div>
+                    <div class="col-sm-8">Urdu , English</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</div>
-<div class="section" id="skill">
-  <div class="container">
-    <div class="h4 text-center mb-4 title">Professional Skills</div>
-    <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-      <div class="card-body">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="progress-container progress-primary"><span class="progress-badge">HTML</span>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div><span class="progress-value">80%</span>
+      <div class="section" id="skill">
+        <div class="container">
+          <div class="h4 text-center mb-4 title">Professional Skills</div>
+          <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="progress-container progress-primary"><span class="progress-badge">Copy Writing</span>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
+                        data-aos-duration="2000" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                        aria-valuemax="100" style="width: 90%;"></div><span class="progress-value">90%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="progress-container progress-primary"><span class="progress-badge">Website Content
+                      Writing</span>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
+                        data-aos-duration="2000" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                        aria-valuemax="100" style="width: 90%;"></div><span class="progress-value">90%</span>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="progress-container progress-primary"><span class="progress-badge">CSS</span>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div><span class="progress-value">60%</span>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="progress-container progress-primary"><span class="progress-badge">Transcription</span>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
+                        data-aos-duration="2000" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                        aria-valuemax="100" style="width: 90%;">
+                      </div>
+                      <span class="progress-value">90%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="progress-container progress-primary"><span class="progress-badge">Translation</span>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
+                        data-aos-duration="2000" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                        aria-valuemax="100" style="width: 90%;"></div><span class="progress-value">90%</span>
+                    </div>
+                  </div>
+                </div>
               </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="progress-container progress-primary"><span class="progress-badge">Proof Reading</span>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
+                        data-aos-duration="2000" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                        aria-valuemax="100" style="width: 80%;"></div><span class="progress-value">80%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="progress-container progress-primary"><span class="progress-badge">Content Editing</span>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
+                        data-aos-duration="2000" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                        aria-valuemax="100" style="width: 80%;"></div><span class="progress-value">80%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="progress-container progress-primary"><span class="progress-badge">Creating
+                      Infographics</span>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
+                        data-aos-duration="2000" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                        aria-valuemax="100" style="width: 70%;"></div><span class="progress-value">70%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="progress-container progress-primary"><span class="progress-badge">Banner Designing</span>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
+                        data-aos-duration="2000" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                        aria-valuemax="100" style="width: 70%;"></div><span class="progress-value">70%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="progress-container progress-primary"><span class="progress-badge">JavaScript</span>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div><span class="progress-value">75%</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="progress-container progress-primary"><span class="progress-badge">ReactJs</span>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div><span class="progress-value">80%</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="progress-container progress-primary"><span class="progress-badge">Bootstrap</span>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 65%;"></div><span class="progress-value">65%</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="progress-container progress-primary"><span class="progress-badge">NodeJs/ExpressJs</span>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div><span class="progress-value">85%</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-              <div class="progress-container progress-primary"><span class="progress-badge">MongoDB</span>
-                <div class="progress">
-                  <div class="progress-bar progress-bar-primary" data-aos="progress-full" 
-                  data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" 
-                  aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                </div>
-                  <span class="progress-value">70%</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="progress-container progress-primary"><span class="progress-badge">MySQL</span>
-                <div class="progress">
-                  <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 55%;"></div><span class="progress-value">55%</span>
-                </div>
-              </div>
-            </div>
-          </div>
       </div>
-    </div>
-  </div>
-</div>
-<div class="section" id="portfolio">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 ml-auto mr-auto">
-        <div class="h4 text-center mb-4 title">Portfolio</div>
-        <!-- <div class="nav-align-center">
+      <div class="section" id="portfolio">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 ml-auto mr-auto">
+              <div class="h4 text-center mb-4 title">Portfolio</div>
+              <!-- <div class="nav-align-center">
           <ul class="nav nav-pills nav-pills-primary" role="tablist">
             <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#web-development" role="tablist"><i class="fa fa-laptop" aria-hidden="true"></i></a></li>
             <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#graphic-design" role="tablist"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>
             <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#Photography" role="tablist"><i class="fa fa-camera" aria-hidden="true"></i></a></li>
           </ul>
         </div> -->
-      </div>
-    </div>
-    <div class="tab-content gallery mt-5">
-      <div class="tab-pane active" id="web-development">
-        <div class="ml-auto mr-auto">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#web-development">
-                  <figure class="cc-effect"><img src="https://raw.githubusercontent.com/ahsankhan1911/my-portfolio/master/images/vi-ss.PNG"  alt="Image"/>
-                    <figcaption>
-                      <div class="h4">VPN Insights</div>
-                      <p>Web Development</p>
-                    </figcaption>
-                  </figure></a></div>
-           
             </div>
-            <div class="col-md-6">
-                <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#web-development">
-                    <figure class="cc-effect"><img src="https://raw.githubusercontent.com/ahsankhan1911/my-portfolio/master/images/praips-ss.PNG"   alt="Image"/>
-                      <figcaption>
-                        <div class="h4">Praips FAQ System</div>
-                        <p>Web Development</p>
-                      </figcaption>
-                    </figure></a></div>
-           
-              <!-- <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#web-development">
+          </div>
+          <div class="tab-content gallery mt-5">
+            <div class="tab-pane active" id="web-development">
+              <div class="ml-auto mr-auto">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                      <a href="https://ecommercedevops.com/" target="_blank">
+                        <figure class="cc-effect"><img
+                            src="https://ecommercedevops.com/wp-content/uploads/2020/05/cropped-ecommerce-website-logo-01.png"
+                            alt="Image" />
+                          <figcaption>
+                            <div class="h4">Ecommerce Devops</div>
+                            <p>Website Content Writing</p>
+                          </figcaption>
+                        </figure>
+                      </a></div>
+
+                  </div>
+                  <div class="col-md-6">
+                    <div style="background-color: rgba(11,25,72,1);" class="cc-porfolio-image img-raised"
+                      data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="https://www.xpezia.com/"
+                        target="_blank">
+                        <figure style="height: 158px; " class="cc-effect"><img
+                            src="https://www.xpezia.com/wp-content/uploads/2019/07/Logo-Xpezia-White-250x104.png"
+                            width="432" height="123.74" style="margin: 0 auto;" alt="Image" />
+                          <figcaption>
+                            <div class="h4">Xpezia</div>
+                            <p>Website Content Writing</p>
+                          </figcaption>
+                        </figure>
+                      </a></div>
+
+                    <!-- <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#web-development">
                   <figure class="cc-effect"><img src="images/project-4.jpg" alt="Image"/>
                     <figcaption>
                       <div class="h4">Web Advertising Project</div>
                       <p>Web Development</p>
                     </figcaption>
                   </figure></a></div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="section" id="experience">
+        <div class="container cc-experience">
+          <div class="h4 text-center mb-4 title">Work Experience</div>
+          <div class="card">
+            <div class="row">
+              <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body cc-experience-header">
+                  <p>April 2020 - Present</p>
+                  <div class="h5">fullstop360.inc
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body">
+                  <div class="h5">Copy Writer</div>
+                  <p>My responsibilities includes:
+                    <ul>
+                      <li>Writing website content.</li>
+                      <li>Designing banner</li>
+                      <li>Editing</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      
-      
-    </div>
-  </div>
-</div>
-<div class="section" id="experience">
-  <div class="container cc-experience">
-    <div class="h4 text-center mb-4 title">Work Experience</div>
-    <div class="card">
-      <div class="row">
-        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body cc-experience-header">
-            <p>March 2017 - Present</p>
-            <div class="h5">Al Ebtekaar</div>
-          </div>
-        </div>
-        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body">
-            <div class="h5">Web App Developer</div>
-            <p>My responsibilities includes: 
-              <ul>
-                <li>Creating responsive and Mobile friendly Web Design.</li>
-                <li>Making front-end logics which should meet the requirements of the app.</li>
-                <li>Building a powerful backend of the app with RESTful APIs where all the data and business logics exists.</li>
 
+          <div class="card">
+            <div class="row">
+              <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body cc-experience-header">
+                  <p>Feb 2020 - Present</p>
+                  <div class="h5">SETalks
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body">
+                  <div class="h5">Freelance Writer</div>
+                  <p>My responsibilities includes:
+                    <ul>
+                      <li>Writing website content.</li>
+                      <li>Writing guest blogs</li>
+                      <!-- <li>Designing banner</li>
+                  <li>Editing</li> -->
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
 
-              </ul>
-            </p>
+          <div class="card">
+            <div class="row">
+              <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body cc-experience-header">
+                  <p>Sep 2019 - Feb 2020</p>
+                  <div class="h5">Humari News
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body">
+                  <div class="h5">Author</div>
+                  <p>My responsibilities includes:
+                    <ul>
+                      <!-- <li>Writing website content.</li>
+                    <li>Writing guest blogs</li> -->
+                      <li>Creating research based articles</li>
+                      <!-- <li>Designing banner</li>
+                    <li>Editing</li> -->
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
+
+          <div class="card">
+            <div class="row">
+              <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body cc-experience-header">
+                  <p>Aug 2019 - Present</p>
+                  <div class="h5">ISTIK
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body">
+                  <div class="h5">Editor In Chief</div>
+                  <p>My responsibilities includes:
+                    <ul>
+                      <li>Editing website content.</li>
+
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="row">
+              <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body cc-experience-header">
+                  <p>May 2018 - May 2020</p>
+                  <div class="h5">LiveTech
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body">
+                  <div class="h5">Freelance Blogger</div>
+                  <p>My responsibilities includes:
+                    <ul>
+                      <li>As a freelancer, I have written many academic assignments, articles, website contents and
+                        blogs</li>
+
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="row">
+              <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body cc-experience-header">
+                  <p>Oct 2017 - May 2019</p>
+                  <div class="h5">StubbornSystems
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body">
+                  <div class="h5">Freelance Writer</div>
+                  <p>My responsibilities includes:
+                    <ul>
+                      <li>Copy writing</li>
+
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="row">
+              <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body cc-experience-header">
+                  <p>Mar 2017 - Present</p>
+                  <div class="h5">Best VPN Analysis
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body">
+                  <div class="h5">Web Content Specialist</div>
+                  <p>My responsibilities includes:
+                    <ul>
+                      <li>Managing admin panel</li>
+                      <li>Writing website content</li>
+
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
-    </div>
-   
-  </div>
-</div>
-<div class="section">
-  <div class="container cc-education">
-    <div class="h4 text-center mb-4 title">Education</div>
-    <div class="card">
-      <div class="row">
-        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body cc-education-header">
-            <p>2015 - present</p>
-            <div class="h5">Diploma</div>
+      <div class="section">
+        <div class="container cc-education">
+          <div class="h4 text-center mb-4 title">Education</div>
+          <div class="card">
+            <div class="row">
+              <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body cc-education-header">
+                  <p>2018 - 2020</p>
+                  <div class="h5">Masters</div>
+                </div>
+              </div>
+              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body">
+                  <div class="h5">Human Resource Management</div>
+                  <p class="category">University of Karachi</p>
+                  <p>The University of Karachi is a public research university located in Karachi, Sindh, Pakistan.
+                    Established through a national emergence and a followup of the University of Sindh, the university
+                    was established with a status as "Federal University" in 1951 and designed by the Mohsin Baig as its
+                    chief architect</p>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body">
-            <div class="h5">Software Engineering</div>
-            <p class="category">Aptech Computer Education</p>
-            <p>Aptech Limited is a global education and training company headquartered in Mumbai, India. In 2016,
-               Aptech was voted as India's Most Trusted Brand in training & education in the consumer survey conducted
-                by IBC Infomedia & Media Research Group.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card">
+          <!-- <div class="card">
       <div class="row">
         <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body cc-education-header">
@@ -342,8 +525,8 @@ if(request.readyState === 4) {
           </div>
         </div>
       </div>
-    </div>
-    <div class="card">
+    </div> -->
+          <!-- <div class="card">
       <div class="row">
         <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body cc-education-header">
@@ -361,13 +544,13 @@ if(request.readyState === 4) {
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</div>
-<!-- onforminput="submitForm(e)"
+    </div> -->
+        </div>
+      </div>
+      <!-- onforminput="submitForm(e)"
 onsubmit="submitForm()" -->
-<!-- action="https://formspree.io/ahsankhan1911@gmail.com"  -->
-<div class="section" id="contact">
+      <!-- action="https://formspree.io/ahsankhan1911@gmail.com"  -->
+      <!-- <div class="section" id="contact">
   <div class="cc-contact-information" style="background-image: url('images/staticmap.png');">
     <div class="container">
       <div class="cc-contact">
@@ -436,32 +619,38 @@ onsubmit="submitForm()" -->
       </div>
     </div>
   </div>
-</div></div>
-    </div>
-    <footer class="footer">
-      <div class="container text-center">
-        <a class="cc-facebook btn btn-link" target="_blank" href="https://www.fb.com/profile.php?id=1550840396"><i class="fa fa-facebook fa-2x " aria-hidden="true"></i></a>
-        <a class="cc-github btn btn-link " target="_blank" href="https://github.com/ahsankhan1911"><i class="fa fa-github fa-2x " aria-hidden="true"></i></a>
-        <a class="cc-linkedin btn btn-link" target="_blank" href="https://www.linkedin.com/in/ahsan-khan-7ab4a6156/" ><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
-        <a class="cc-quora btn btn-link"target="_blank" href="https://www.quora.com/profile/Ahsan-Khan-395"><i class="fa fa-quora fa-2x " aria-hidden="true"></i></a>
-      </div>
-      <div class="h4 title text-center">Ahsan Khan</div>
-      <div class="text-center text-muted">
-        <p>&copy; Ahsan Khan's CV. All rights reserved 2018. </p>
-      </div>
-    </footer>
-    <script src="js/core/jquery.3.2.1.min.js"></script>
-    <script src="js/core/popper.min.js"></script>
-    <script src="js/core/bootstrap.min.js"></script>
-    <script src="js/now-ui-kit.js?v=1.1.0"></script>
-    <script src="js/aos.js"></script>
-    <script src="scripts/main.js"></script>
-    <script>
-    document.getElementById('contactform').addEventListener("submit", (event) => {
+</div> -->
 
-      event.preventDefault()
-    })
-    </script>
-  </body>
- 
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container text-center">
+      <a class="cc-facebook btn btn-link" target="_blank" href="https://www.facebook.com/fiza.khan16"><i
+          class="fa fa-facebook fa-2x " aria-hidden="true"></i></a>
+      <a class="cc-twitter btn btn-link " target="_blank" href="https://twitter.com/FizaKha70329488"><i
+          class="fa fa-twitter fa-2x " aria-hidden="true"></i></a>
+      <a class="cc-linkedin btn btn-link" target="_blank" href="http://linkedin.com/in/fizakhan22"><i
+          class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+      <a class="cc-quora btn btn-link" target="_blank" href="https://www.quora.com/profile/Fiza-Khan-756"><i
+          class="fa fa-quora fa-2x " aria-hidden="true"></i></a>
+      <a class="cc-instagram btn btn-link" target="_blank" href="https://www.instagram.com/fizak749/"><i
+          class="fa fa-instagram fa-2x " aria-hidden="true"></i></a>
+
+    </div>
+    <div class="h4 title text-center">Fiza Khan</div>
+    <div class="text-center text-muted">
+      <p id="copyright"></p>
+    </div>
+  </footer>
+  <script src="js/core/jquery.3.2.1.min.js"></script>
+  <script src="js/core/popper.min.js"></script>
+  <script src="js/core/bootstrap.min.js"></script>
+  <script src="js/now-ui-kit.js?v=1.1.0"></script>
+  <script src="js/aos.js"></script>
+  <script src="scripts/main.js"></script>
+  <script>
+    document.getElementById('copyright').innerHTML = `&copy; Fiza Khan's Portfolio. All rights reserved ${new Date().getFullYear()}`
+  </script>
+</body>
+
 </html>
